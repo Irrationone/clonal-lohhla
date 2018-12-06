@@ -18,6 +18,8 @@ rule run_model:
         unique_read_counts=config['unique_read_counts'],
     params:
         name='run-model',
+        anchor_model=config['model_type'],
+        anchor_mode=config['anchor_mode'],
     log:
         '{logdir}/run_model.log'.format(logdir=config['logdir']),
     output:
