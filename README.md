@@ -1,6 +1,6 @@
 # Clonal HLA LOH inference
 
-Workflow for basic probabilistic inference of clonal HLA LOH.
+Basic workflow probabilistic inference of clonal HLA LOH.
 
 Refer to example input files under `data/`. 
 
@@ -24,6 +24,5 @@ Refer to example input files under `data/`.
 
 ## TODOs
 
-* Account for branch length
 * Add versions
 * Properly document
