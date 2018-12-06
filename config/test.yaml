@@ -1,0 +1,21 @@
+# Inputs
+
+clonal:
+  prevalences: data/clonal_prevalences.tsv
+  tree_edges: data/tree_edges.tsv
+
+lohhla:
+  hlaloss: data/hlaloss_table.tsv
+  cpn: data/integercpn_table.tsv
+
+ploidy_cellularity: data/ploidy_cellularity.tsv
+unique_read_counts: data/flagstat_table.tsv
+
+# Parameters
+model_type: nb
+anchor_mode: snvcn
+
+# Outputs
+outdir: 'test/output'
+logdir: 'test/logs'
+
