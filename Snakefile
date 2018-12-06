@@ -1,5 +1,8 @@
 configfile: "config/test.yaml"
 
+# Replace with the python version with dependencies installed
+PYTHON='/home/alzhang/miniconda2/envs/ith3pymc3/bin/python'
+
 rule all:
     input:
         '{outdir}/model_outputs'.format(outdir=config['outdir']),
@@ -20,7 +23,7 @@ rule run_model:
     output:
         '{outdir}/model_outputs'.format(outdir=config['outdir']),
     shell:
-        'python python/run_clonal_lohhla.py '
+        '{PYTHON} python/run_clonal_lohhla.py '
         '--clonal_prevalence_file {input.prevalences} '
         '--flagstat_file {input.unique_read_counts} '
         '--hlaloss_file {input.hlaloss} '

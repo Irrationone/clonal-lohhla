@@ -15,6 +15,7 @@ Refer to example input files under `data/`.
 
 ## Dependencies
 
+* python2.7
 * numpy
 * pandas
 * pymc3
